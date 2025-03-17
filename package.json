@@ -1,0 +1,35 @@
+{
+  "name": "figma-mcp-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js",
+    "start:stdio": "TRANSPORT_TYPE=stdio node build/index.js",
+    "start:sse": "TRANSPORT_TYPE=sse node build/index.js"
+  },
+  "keywords": [
+    "figma",
+    "mcp",
+    "design"
+  ],
+  "author": "Mohammed-uvaiz",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
